@@ -1,0 +1,39 @@
+{
+  "name": "wxmall",
+  "version": "1.0.0",
+  "description": "lingtal wxmall",
+  "domain" : {
+    "dev" : "http://192.168.31.182:10086",
+    "demo"  : "http://demo.lingtal.com/fis3",
+    "svn"  : "http://127.0.0.1:10086",
+    "online": "http://127.0.0.1:10086"
+  },
+  "cdn" : {
+    "cdnName"   : "qiniu",
+    "bucketName": "static-cdn",
+    "accessKey" : "JSL6CY6QJ3xGheD223gYpCLn6Ocmh774q7i8f8CN",
+    "secretKey" : "VI-tUPuSmp1igiGcM8ejTDs9HFvBd-PIHptwcQ5L"
+  },
+  "svn" : {
+    "path" : "/Users/bobo/wwwRoot/demo_Root/demo/fis3demo_1_output"
+  },
+  "excludeList" : ["vendors"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxmall/wxmall.github.io.git"
+  },
+  "keywords": [
+    
+  ],
+  "author": "听着情歌流泪",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/wxmall/wxmall.github.io/issues"
+  },
+  "homepage": "https://github.com/wxmall/wxmall.github.io.git",
+  "dependencies": {
+  }
+}

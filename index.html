@@ -2,25 +2,56 @@
   <html>
     <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta content="maximum-dpr=2" name="flexible" />
       <title>凌拓科技--微店系统</title>
+      <!--STYLE_PLACEHOLDER-->
+      <link rel="stylesheet" href="vendors/css/layout.css">
+      
+      
       <script type="text/javascript">
-        !function(a){function b(){a.rem=f.getBoundingClientRect().width/16,f.style.fontSize=a.rem+"px"}var c,d=a.navigator.appVersion.match(/iphone/gi)?a.devicePixelRatio:1,e=1/d,f=document.documentElement,g=document.createElement("meta");if(a.dpr=d,a.addEventListener("resize",function(){clearTimeout(c),c=setTimeout(b,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(c),c=setTimeout(b,300))},!1),f.setAttribute("data-dpr",d),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+e+", maximum-scale="+e+", minimum-scale="+e+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var h=document.createElement("div");h.appendChild(g),document.write(h.innerHTML)}b()}(window);
-
+        __inline('static/js/libs/flexible.js');
         var webHost             =     'http://'+location.host;
-        var $CONFIG             =      {};
-        $CONFIG['webPath']      =     webHost;
-        $CONFIG['staticPath']   =     webHost+'/static';
-        $CONFIG['tplPath']      =     webHost+'/page';
-        $CONFIG['apiPath']      =     '';
-        $CONFIG['imgPath']      =     '';
-      </script>
-
+        var appConfig = {
+        debug       :   true,
+        contextPath :   location.host.indexOf('lingtal.com')>0 ? '/sui/app/' : '/app/',
+        webPath     :   webHost,
+        staticPath      :   '/wxmall/1.0.0/static',
+        modulePath      :   '/app/modules',
+        apiPath         :   '/data.php?a=',
+      }
+        
+      </script><!--ignore-->
+      
     </head>
     <body>
+
+      <div class="page page-current" id="home">
       凌拓科技--微店系统
+    </div>
+      <script src="static/js/libs/zepto.js"></script>
+      <script src="vendors/require/require.js"></script>
+      <script src='vendors/frame/intro.js'></script>
+      <script src="vendors/frame/device.js"></script>
+      <script src='vendors/frame/util.js'></script>
+      <script src='vendors/frame/detect.js'></script>
+      <script src='vendors/frame/zepto-adapter.js'></script>
+      <script src='vendors/frame/fastclick.js'></script>
+      <script src='vendors/frame/template7.js'></script>
+      <script src='vendors/frame/page.js'></script>
+      <script src='vendors/frame/tabs.js'></script>
+      <script src='vendors/frame/modal.js'></script>
+      <script src='vendors/frame/iscroll.js'></script>
+      <script src='vendors/frame/scroller.js'></script>
+      <script src='vendors/frame/pull-to-refresh-js-scroll.js'></script>
+      <script src='vendors/frame/pull-to-refresh.js'></script>
+      <script src='vendors/frame/infinite-scroll.js'></script>
+      <script src='vendors/frame/router.js'></script>
+      <script src='vendors/frame/init.js'></script>
+
+      <script src='vendors/js/main.js'></script>
+      <!--SCRIPT_PLACEHOLDER-->
   </body>
   
 </html>
